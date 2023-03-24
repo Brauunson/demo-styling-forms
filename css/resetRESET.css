@@ -6,8 +6,8 @@
 }
 
 /* Remove default padding */
-ul[class],
-ol[class] {
+ul,
+ol{
   padding: 0;
 }
 
@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -38,8 +38,8 @@ body {
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
-ul[class],
-ol[class] {
+ul,
+ol{
   list-style: none;
 }
 
@@ -66,6 +66,16 @@ textarea,
 select {
   font: inherit;
 }
+
+/* Screen reader only class- hides content from display */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  }
 
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
